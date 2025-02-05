@@ -19,28 +19,15 @@ function jakaria(num3,num4){
 }
 jakaria( 3 , 4)
 
-for(var looop = 0; looop <= 10; looop = looop + 1 ){
-
-    function nur (x , y){
-        var pay = x / y;
-        console.log('rusult = ' + pay)
-    }  
-    nur(3, 2)
+function n (d){
+    console.log('i am massage')
 }
-console.log('END');
+n()
 
-var lop = 1;
-while(lop <= 10){
+// (function display (mass){
+//     console.log(mass);
+// })("Hello");
 
-    function maines (t, u){
-        var n  = t - u;
-        console.log('rusult = ' + n)
-    }
-
-   lop = lop + lop;
-    maines(3,10)
-
-}
 
 // function nur (x , y){
 //     var pay = x / y;
