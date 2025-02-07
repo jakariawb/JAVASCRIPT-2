@@ -14,21 +14,34 @@ for(var i=0;i<4;i++){
 console.log('Enter your sum Number = '+ sum)
 
 
-// var num = [10,20,30,40]
-// var num = new Array()
+var num = [10,20,30,40]
+var num = new Array()
 
-// for (var i=0; i<4; i++){
-//      num[i] = parseInt(prompt('enter your first number'));
+for (var i=0; i<4; i++){
+     num[i] = parseInt(prompt('enter your first number'));
 
-// }
-// var sum = 0;
+}
+var sum = 0;
 
-// for(var i = 0;i<4; i++){
-//     console.log("uager Number ="+num[i]);
-//     10
-//     sum = sum + num[i];
-// }
-// console.log('sum number ='+ sum)
+for(var i = 0;i<4; i++){
+    console.log("uager Number ="+num[i]);
+    10
+    sum = sum + num[i];
+}
+console.log('sum number ='+ sum)
+
+
+var name = ['kalam', 'kovir', 'abir', 'jak'];
+console.log(name);
+
+name.splice(3,0,'no','e')
+console.log(name)
+
+name.shift();
+console.log(name);
+
+name.unshift('jfs');
+console.log(name);
 
 
 
