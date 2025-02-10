@@ -56,4 +56,37 @@ var name = [
 ];
 console.log(name)
 var highest = highestScores(name)
-console.log("Highest Scorer:",highest[0]);
+
+
+console.log("Highest Scorer:",highest[1]);
+
+function highestScoreNumber (scores){
+        var max = [0];
+        // first man ar pora loope chlano holo
+        for(var y =1;y<scores .length; y++){
+            if(max<scores[y]){
+                max = scores[y];
+            }
+        }
+        return max;
+}
+var scores =[
+    '12','39','47','45'
+];
+console.log(scores);
+var maxScore = highestScoreNumber(scores);
+console.log('max number = ',maxScore);
+
+var number1 =[
+    '12','39','47','45'
+];
+
+let number = [2,3,64,65];
+let sum = 0;
+for(let num of number){
+    sum += num;
+}
+console.log(sum);
+
+
+
