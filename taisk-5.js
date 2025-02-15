@@ -12,16 +12,16 @@
 // var maxScore = highestScores(scores)
 // console.log(maxScore
 function highestScores (playersInfo){
-    var highestScore = playersInfo[0][0];
+    var highestScorer = playersInfo[0][0];
     var highestScore = playersInfo[0][1];
     for(var v = 1;v < playersInfo.length;v++){
         if(highestScore < playersInfo [v][1]){
             highestScore = playersInfo [v][1];
-            highestPlayer = playersInfo [v][0];
+            highestScorer = playersInfo [v][0];
         }
         
     }
-    return[highestPlayer, highestScore];
+    return[highestScorer]
 }
 playersInfo = [
     ['Ashraful', 95],
@@ -31,34 +31,32 @@ playersInfo = [
   ];
   console.log(playersInfo);
   
-var  highest = highestScores(playersInfo);
-console.log("Highest Scorer:",highest[1]);
+  var highest = highestScores(playersInfo);
+  console.log("Highest Scorer:", highest[0], "with score:", highest[1]);
   
 
 
-function highestScore1 (name){
-    var highestScore = name[0][0];
-    var highestScore = name[0][1];
-    for(var f = 1;f>name.length;){
-        if(highestScore<name[f][1]){
-            highestScore<name[f][1];
-            highestPlayer>name[f][0]
-        }
-    }
-    return highestScore,highestPlayer;
+// function highestScore1 (name){
+//     var highestScore = name[0][0];
+//     var highestScore = name[0][1];
+//     for(var f = 1;f>name.length;){
+//         if(highestScore<name[f][1]){
+//             highestScore<name[f][1];
+//             highestPlayer>name[f][0]
+//         }
+//     }
+//     return[highestScore];
 
-}
-var name = [
-    ['Ashraful',1],
-    ['Ashraful',2],
-    ['Ashraful',8],
-    ['Ashrafulu',9],
-];
-console.log(name)
-var highest = highestScores(name)
-
-
-console.log("Highest Scorer:",highest[1]);
+// }
+// var name = [
+//     ['Ashraful',1],
+//     ['Ashraful',2],
+//     ['Ashraful',8],
+//     ['Ashrafulu',9],
+// ];
+// console.log(name)
+// var highest = highestScores(name)
+// console.log("highest Scorer:",highest[1]);
 
 function highestScoreNumber (scores){
         var max = [0];
