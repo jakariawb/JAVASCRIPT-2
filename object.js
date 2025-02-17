@@ -39,3 +39,18 @@ var student3 = new studentInfo('jakaria',27,2.93,['japnise','koria','baingla']);
 student3.display()
 student3.display()
 student3.display()
+
+function studentInfo1(name,age,cgpa,lage){
+    this.name = name;
+    this.age = age;
+    this.cgpa = cgpa;
+    this.lage = lage;
+  this. Student = function(){
+        console.log(this.name);
+        console.log(this.age);
+        console.log(this.cgpa);
+        console.log(this.lage);
+  }  
+}
+var info = new studentInfo1('jakaria',23,4.400,['japnise','turke','malta']);
+info.Student()
