@@ -29,4 +29,4 @@ var playersInfo = [
 ];
 console.log(playersInfo);
 var  highest = highestRunScorer(playersInfo)
-console.log("Highest Scorer:",highest);
+console.log("Highest Scorer:"+highest);
